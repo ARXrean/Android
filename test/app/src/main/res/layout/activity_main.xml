@@ -11,7 +11,52 @@
     tools:context="com.example.administrator.test.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Amount"
+        android:id="@+id/tvAmount"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etAmount"
+        android:layout_below="@id/tvAmount"/>
+
+    <TextView
+        android:text="Nbr pers."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNbr"
+        android:layout_below="@id/etAmount"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etNbr"
+        android:layout_below="@id/tvNbr"/>
+
+    <TextView
+        android:text="AMOUNT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:layout_below="@+id/etNbr"
+        android:id="@+id/tvAmountPerPerson"
+        android:layout_margin="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="Go dutch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnCompute"
+        android:layout_margin="20dp"
+        android:onClick="btnCompute"/>
 </RelativeLayout>
