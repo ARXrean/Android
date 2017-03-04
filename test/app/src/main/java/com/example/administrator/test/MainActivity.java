@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         share = Double.valueOf(Math.round(share+100));
         share=share/100;
 
-        Toast.makeText(getBaseContext(),"the amount to show is "+share,Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getBaseContext(),"the amount to show is "+share,Toast.LENGTH_SHORT).show();
+        display.setText(String.valueOf(share));
     }
 }
