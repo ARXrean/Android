@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Double total=Double.parseDouble(totalAmount.getText().toString());
         Double persons=Double.parseDouble(persNbr.getText().toString());
         Double share=total/persons;
-        share = Double.valueOf(Math.round(share+100));
+        share = Double.valueOf(Math.round(share*100));
         share=share/100;
 
         //Toast.makeText(getBaseContext(),"the amount to show is "+share,Toast.LENGTH_SHORT).show();
