@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+
+    tools:context="com.example.kzy.goslinglovelace.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="James Gosling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_james"
+                android:layout_below="@id/textView2"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:text="James Gosling received a Bachelor of Science from the University of Calgary [5] and his M.A. and Ph.D. from Carnegie Mellon University.[2][6][7] While working towards his doctorate, he wrote a version of Emacs called Gosling Emacs (Gosmacs). Before joining Sun Microsystems he built a multi-processor version of Unix for a 16-way computer system[8] while at Carnegie Mellon University. There, he also developed several compilers and mail systems.
+Between 1984 and 2010, Gosling was with Sun Microsystems. He is known as the father of the Java programming language.[9][10]
+On April 2, 2010, Gosling left Sun Microsystems which had recently been acquired by the Oracle Corporation.[9] Regarding why he left, Gosling cited reductions in pay, status, decision-making ability, change of role, and ethical challenges.[11] He has since taken a very critical stance towards Oracle in interviews, noting that During the integration meetings between Sun and Oracle, where we were being grilled about the patent situation between Sun and Google, we could see the Oracle lawyer's eyes sparkle.[10] Later, during the Oracle v Google trial over Android, he clarified his position saying Just because Sun didn't have patent suits in our genetic code doesn't mean we didn't feel wronged. While I have differences with Oracle, in this case they are in the right. Google totally slimed Sun. We were all really disturbed, even Jonathan [Schwartz]: he just decided to put on a happy face and tried to turn lemons into lemonade, which annoyed a lot of folks at Sun. [12]
+            On March 28, 2011, James Gosling announced on his blog that he had been hired by Google.[13] Five months later, he announced that he joined a startup called Liquid Robotics.[1]
+            Gosling is listed as an adviser at the Scala company Typesafe Inc.,[14] Independent Director at Jelastic[15] and Strategic Advisor for Eucalyptus.[16]
+            Gosling is known for his love of proving the unknown and has noted that his favorite irrational number is √2. He has a framed picture of the first 1,000 digits of √2 in his office."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_below="@id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
