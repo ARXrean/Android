@@ -1,7 +1,9 @@
 package com.example.kzy.musicplayer;
 
 import android.app.Activity;
+import android.app.ActivityGroup;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -21,7 +23,7 @@ import java.util.List;
  * Created by 骈纬国 on 2017/3/14.
  */
 
-public class ListActicity extends FragmentActivity {
+public class ListActicity extends ActivityGroup {
 
     private List<View>viewList;
     private MyPagerAdapter adapter;
@@ -38,7 +40,9 @@ public class ListActicity extends FragmentActivity {
         personalTab = (ImageView) findViewById(R.id.personalTab);
 
         viewList = new ArrayList<View>();
-        View onlinelist = View.inflate(this, R.layout.onlinelist, null);
+//        View onlinelist = View.inflate(this, R.layout.onlinelist, null);
+        View onlinelist = getLocalActivityManager().
+                startActivity("1",new Intent(ListActicity.this, Onlinelist.class)).getDecorView();
         final View locallist = View.inflate(this, R.layout.locallist, null);
         final View personal = View.inflate(this, R.layout.personal, null);
 
