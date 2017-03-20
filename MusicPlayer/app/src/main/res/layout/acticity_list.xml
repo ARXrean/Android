@@ -52,7 +52,6 @@
             android:gravity="center"
             android:src="@mipmap/personal1"
             android:text="Personal"
-
             android:textSize="16sp"
             android:textColor="@color/colorWhite"/>
     </com.example.kzy.musicplayer.ViewPagerIndicator>

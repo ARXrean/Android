@@ -23,7 +23,8 @@ import java.util.StringTokenizer;
  * Created by 骈纬国 on 2017/3/16.
  */
 
-public class Onlinelist extends Activity implements AdapterView.OnItemClickListener, AbsListView.OnScrollListener{
+public class Onlinelist extends Activity implements AdapterView.OnItemClickListener,
+        AbsListView.OnScrollListener{
     private ListView onlineListView;
     private SimpleAdapter myAdapter;
     private List<Map<String,Object>> dataList;
