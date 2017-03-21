@@ -49,21 +49,9 @@ public class Okhttp {
         Request.Builder builder = new Request.Builder();
         Request request = builder.url(serverUrl + "").post(body).build();
 
-        executeRequest(request);
+        asynExecuteRequest(request);
     }
 
-    public void executeRequest(Request request){
-
-        Call call = okHttpClient.newCall(request);
-
-//        执行Call
-        try {
-            Response response = call.execute();
-            res = response.body().string();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void asynExecuteRequest(Request request){
 
