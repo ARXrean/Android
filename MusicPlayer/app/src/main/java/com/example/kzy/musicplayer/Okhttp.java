@@ -38,16 +38,16 @@ public class Okhttp {
 
         //构造Request
         Request.Builder builder = new Request.Builder();
-        Request request = builder.get().url(serverUrl + "").build();
+        Request request = builder.get().url(serverUrl).build();
 
         asynExecuteRequest(request);
     }
 
-    public void doLoginPost(){
+    public void doPost(){
         FormBody body = new FormBody.Builder().add("userId","abc").add("userPassword","123").build();
 
         Request.Builder builder = new Request.Builder();
-        Request request = builder.url(serverUrl + "").post(body).build();
+        Request request = builder.url(serverUrl).post(body).build();
 
         asynExecuteRequest(request);
     }

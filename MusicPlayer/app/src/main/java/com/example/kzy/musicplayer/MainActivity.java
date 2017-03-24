@@ -41,9 +41,7 @@ public class MainActivity extends AppCompatActivity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Okhttp okhttp = new Okhttp();
-//                okhttp.doLoginPost();
-//                String loginResult = okhttp.getRes();
+
 
                 showProgressDialog("提示", "正在登录，请稍后......");
                 Intent toList = new Intent(MainActivity.this, ListActicity.class);

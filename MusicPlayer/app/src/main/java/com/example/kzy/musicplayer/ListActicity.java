@@ -25,7 +25,7 @@ import java.util.List;
 
 public class ListActicity extends ActivityGroup {
 
-    private List<View>viewList;
+    private List<View> viewList;
     private MyPagerAdapter adapter;
     private ViewPager pager;
     private ImageView onlineTab, localTab, personalTab;
